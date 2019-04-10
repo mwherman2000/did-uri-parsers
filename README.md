@@ -15,6 +15,12 @@ Update cycle: As required - sometimes several times in a single day.
 - [`did-uri-spec` Use Cases/Test Cases](did-uri-parsers\did-uri-testcases1.txt) (44+ test cases)
 - [`did-uri-spec` Use Case/Test Case Results](did-uri-parsers\did-uri-testcases1.xml) (44+ test results)
 
+## `did-uri-spec` Use Case/Test Case Validation: Sample Output
+
+![Master `did-uri-spec` Grammar: `did-uri-spec` Use Case/Test Case 47](images/did-uri-testcase47.png)
+
+Figure 1. Master `did-uri-spec` Grammar: `did-uri-spec` Use Case/Test Case 47: Sample Output (Text)
+
 ![Master `did-uri-spec` Grammar: `did-uri-spec` Use Case/Test Case Validation](images/did-uri-testcases1.xml.png)
 
-Figure 1. Master `did-uri-spec` Grammar: `did-uri-spec` Use Case/Test Case Validation: Sample Output
+Figure 2. Master `did-uri-spec` Grammar: `did-uri-spec` Use Case/Test Case Validation: Sample Output (XML)
