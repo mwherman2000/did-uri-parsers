@@ -95,7 +95,7 @@ public class Parser
                     while ((line = file.ReadLine()) != null)
                     {
                         counter++;
-                        System.Console.WriteLine(counter.ToString() + ":[" + line + "]");
+                        System.Console.WriteLine("<ID=\"" + counter.ToString() + "\" Test=\"" + SafeQuote(line) + "\"/>");
 
                         rule = Parse(
                                     arguments["Rule"],
@@ -148,6 +148,16 @@ public class Parser
         }
         Console.WriteLine("Press Enter to exit...");
         Console.ReadLine();
+    }
+
+    private static string SafeQuote(string line)
+    {
+        line = line.Replace("&", "&amp;");
+        line = line.Replace("\"", "&quot;");
+        line = line.Replace("'", "&apos;");
+        line = line.Replace("<", "&lt;");
+        line = line.Replace(">", "&gt;");
+        return line;
     }
 
     static public Rule Parse(String rulename, String text)
