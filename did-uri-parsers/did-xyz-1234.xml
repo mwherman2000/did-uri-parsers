@@ -1,0 +1,32 @@
+﻿<did-uri>
+  <did-optional-transform>
+    <did>
+      <did-method>
+        <did-root>did:</did-root>
+        <method>
+          <methodchar>x</methodchar>
+          <methodchar>y</methodchar>
+          <methodchar>z</methodchar>
+        </method>:
+      </did-method>
+      <method-specific-idstring>
+        <idstring>
+          <idchar>
+            <DIGIT>1</DIGIT>
+          </idchar>
+          <idchar>
+            <DIGIT>2</DIGIT>
+          </idchar>
+          <idchar>
+            <DIGIT>3</DIGIT>
+          </idchar>
+          <idchar>
+            <DIGIT>4</DIGIT>
+          </idchar>
+        </idstring>
+      </method-specific-idstring>
+    </did>
+    <path-abempty>
+    </path-abempty>
+  </did-optional-transform>
+</did-uri>

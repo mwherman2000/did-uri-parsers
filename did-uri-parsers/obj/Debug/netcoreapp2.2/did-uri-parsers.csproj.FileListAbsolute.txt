@@ -1,0 +1,11 @@
+C:\INDY\did-uri-parsers\did-uri-parsers\bin\Debug\netcoreapp2.2\did-uri-parsers.deps.json
+C:\INDY\did-uri-parsers\did-uri-parsers\bin\Debug\netcoreapp2.2\did-uri-parsers.runtimeconfig.json
+C:\INDY\did-uri-parsers\did-uri-parsers\bin\Debug\netcoreapp2.2\did-uri-parsers.runtimeconfig.dev.json
+C:\INDY\did-uri-parsers\did-uri-parsers\bin\Debug\netcoreapp2.2\did-uri-parsers.dll
+C:\INDY\did-uri-parsers\did-uri-parsers\bin\Debug\netcoreapp2.2\did-uri-parsers.pdb
+C:\INDY\did-uri-parsers\did-uri-parsers\obj\Debug\netcoreapp2.2\did-uri-parsers.csproj.CoreCompileInputs.cache
+C:\INDY\did-uri-parsers\did-uri-parsers\obj\Debug\netcoreapp2.2\did-uri-parsers.AssemblyInfoInputs.cache
+C:\INDY\did-uri-parsers\did-uri-parsers\obj\Debug\netcoreapp2.2\did-uri-parsers.AssemblyInfo.cs
+C:\INDY\did-uri-parsers\did-uri-parsers\obj\Debug\netcoreapp2.2\did-uri-parsers.dll
+C:\INDY\did-uri-parsers\did-uri-parsers\obj\Debug\netcoreapp2.2\did-uri-parsers.pdb
+C:\INDY\did-uri-parsers\did-uri-parsers\obj\Debug\netcoreapp2.2\did-uri-parsers.csprojAssemblyReference.cache

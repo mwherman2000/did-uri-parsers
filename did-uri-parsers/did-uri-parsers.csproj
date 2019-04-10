@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <RootNamespace>did_uri_parsers</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ParserTestCases.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="ParserTestCases.txt" />
+  </ItemGroup>
+
+</Project>

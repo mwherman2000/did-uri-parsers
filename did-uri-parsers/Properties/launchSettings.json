@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "did-uri-parsers": {
+      "commandName": "Project",
+      "commandLineArgs": "-rule \"did-uri\" -string \"did:xyz:1234\" -testcases \"../../../did-uri-testcases1.txt\" -visitor XmlDisplayer "
+    }
+  }
+}
