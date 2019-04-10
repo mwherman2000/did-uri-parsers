@@ -1,4 +1,7 @@
-﻿did:xyz:1234!$selectId="key1"
+﻿did:
+did:xyz:
+did:xyz:1234
+did:xyz:1234!$selectId="key1"
 did:xyz:1234!$selectId="bops"
 did:xyz:1234!$select="<selectexpression>"
 did:xyz:1234!$contentId="hl:zQmWvQxTqbG2Z9HPJgG57jjwR154cKhbtJenbyYTWkjgF3e"

@@ -1,0 +1,957 @@
+﻿<ID="1" Test="did:"/>
+1:      did:    Rule_did_root
+
+<ID="2" Test="did:xyz:"/>
+1:      did:xyz:        Rule_did_method
+2:      did:    Rule_did_root
+2:      xyz     Rule_method
+
+<ID="3" Test="did:xyz:1234"/>
+1:      did:xyz:1234    Rule_did_optional_transform
+2:      did:xyz:1234    Rule_did
+3:      did:xyz:        Rule_did_method
+4:      did:    Rule_did_root
+4:      xyz     Rule_method
+3:      1234    Rule_method_specific_idstring
+4:      1234    Rule_idstring
+2:              Rule_path_abempty
+
+<ID="4" Test="did:xyz:1234!$selectId=&quot;key1&quot;"/>
+1:      did:xyz:1234!$selectId="key1"   Rule_did_optional_transform
+2:      did:xyz:1234    Rule_did
+3:      did:xyz:        Rule_did_method
+4:      did:    Rule_did_root
+4:      xyz     Rule_method
+3:      1234    Rule_method_specific_idstring
+4:      1234    Rule_idstring
+2:      !$selectId="key1"       Rule_transform
+3:      !       Rule_transform_char
+3:      $selectId="key1"        Rule_transformer
+4:      selectId        Rule_transformer_option
+5:      selectId        Rule_transformer_options
+6:      selectId        Rule_generic_option
+4:      "key1"  Rule_transformer_namedvalue
+5:      "key1"  Rule_transformer_quotedvalue
+6:      "       Rule_DQUOTE
+6:      key1    Rule_transformer_stringvalue
+6:      "       Rule_DQUOTE
+2:              Rule_path_abempty
+
+<ID="5" Test="did:xyz:1234!$selectId=&quot;bops&quot;"/>
+1:      did:xyz:1234!$selectId="bops"   Rule_did_optional_transform
+2:      did:xyz:1234    Rule_did
+3:      did:xyz:        Rule_did_method
+4:      did:    Rule_did_root
+4:      xyz     Rule_method
+3:      1234    Rule_method_specific_idstring
+4:      1234    Rule_idstring
+2:      !$selectId="bops"       Rule_transform
+3:      !       Rule_transform_char
+3:      $selectId="bops"        Rule_transformer
+4:      selectId        Rule_transformer_option
+5:      selectId        Rule_transformer_options
+6:      selectId        Rule_generic_option
+4:      "bops"  Rule_transformer_namedvalue
+5:      "bops"  Rule_transformer_quotedvalue
+6:      "       Rule_DQUOTE
+6:      bops    Rule_transformer_stringvalue
+6:      "       Rule_DQUOTE
+2:              Rule_path_abempty
+
+<ID="6" Test="did:xyz:1234!$select=&quot;&lt;selectexpression&gt;&quot;"/>
+1:      did:xyz:1234!$select="<selectexpression>"       Rule_did_optional_transform
+2:      did:xyz:1234    Rule_did
+3:      did:xyz:        Rule_did_method
+4:      did:    Rule_did_root
+4:      xyz     Rule_method
+3:      1234    Rule_method_specific_idstring
+4:      1234    Rule_idstring
+2:      !$select="<selectexpression>"   Rule_transform
+3:      !       Rule_transform_char
+3:      $select="<selectexpression>"    Rule_transformer
+4:      select  Rule_transformer_option
+5:      select  Rule_transformer_options
+6:      select  Rule_generic_option
+4:      "<selectexpression>"    Rule_transformer_namedvalue
+5:      "<selectexpression>"    Rule_transformer_quotedvalue
+6:      "       Rule_DQUOTE
+6:      <selectexpression>      Rule_transformer_stringvalue
+6:      "       Rule_DQUOTE
+2:              Rule_path_abempty
+
+<ID="7" Test="did:xyz:1234!$contentId=&quot;hl:zQmWvQxTqbG2Z9HPJgG57jjwR154cKhbtJenbyYTWkjgF3e&quot;"/>
+1:      did:xyz:1234!$contentId="hl:zQmWvQxTqbG2Z9HPJgG57jjwR154cKhbtJenbyYTWkjgF3e"    Rule_did_optional_transform
+2:      did:xyz:1234    Rule_did
+3:      did:xyz:        Rule_did_method
+4:      did:    Rule_did_root
+4:      xyz     Rule_method
+3:      1234    Rule_method_specific_idstring
+4:      1234    Rule_idstring
+2:      !$contentId="hl:zQmWvQxTqbG2Z9HPJgG57jjwR154cKhbtJenbyYTWkjgF3e"        Rule_transform
+3:      !       Rule_transform_char
+3:      $contentId="hl:zQmWvQxTqbG2Z9HPJgG57jjwR154cKhbtJenbyYTWkjgF3e" Rule_transformer
+4:      contentId       Rule_transformer_option
+5:      contentId       Rule_transformer_options
+6:      contentId       Rule_generic_option
+4:      "hl:zQmWvQxTqbG2Z9HPJgG57jjwR154cKhbtJenbyYTWkjgF3e"    Rule_transformer_namedvalue
+5:      "hl:zQmWvQxTqbG2Z9HPJgG57jjwR154cKhbtJenbyYTWkjgF3e"    Rule_transformer_quotedvalue
+6:      "       Rule_DQUOTE
+6:      hl:zQmWvQxTqbG2Z9HPJgG57jjwR154cKhbtJenbyYTWkjgF3e      Rule_transformer_stringvalue
+6:      "       Rule_DQUOTE
+2:              Rule_path_abempty
+
+<ID="8" Test="did:xyz:1234!$exists=&quot;bops&quot;"/>
+1:      did:xyz:1234!$exists="bops"     Rule_did_optional_transform
+2:      did:xyz:1234    Rule_did
+3:      did:xyz:        Rule_did_method
+4:      did:    Rule_did_root
+4:      xyz     Rule_method
+3:      1234    Rule_method_specific_idstring
+4:      1234    Rule_idstring
+2:      !$exists="bops" Rule_transform
+3:      !       Rule_transform_char
+3:      $exists="bops"  Rule_transformer
+4:      exists  Rule_transformer_option
+5:      exists  Rule_transformer_options
+6:      exists  Rule_generic_option
+4:      "bops"  Rule_transformer_namedvalue
+5:      "bops"  Rule_transformer_quotedvalue
+6:      "       Rule_DQUOTE
+6:      bops    Rule_transformer_stringvalue
+6:      "       Rule_DQUOTE
+2:              Rule_path_abempty
+
+<ID="9" Test="did:xyz:1234!$parseTree"/>
+1:      did:xyz:1234!$parseTree Rule_did_optional_transform
+2:      did:xyz:1234    Rule_did
+3:      did:xyz:        Rule_did_method
+4:      did:    Rule_did_root
+4:      xyz     Rule_method
+3:      1234    Rule_method_specific_idstring
+4:      1234    Rule_idstring
+2:      !$parseTree     Rule_transform
+3:      !       Rule_transform_char
+3:      $parseTree      Rule_transformer
+4:      parseTree       Rule_transformer_option
+5:      parseTree       Rule_transformer_options
+6:      parseTree       Rule_generic_option
+2:              Rule_path_abempty
+
+<ID="10" Test="did:xyz:1234!$exists"/>
+1:      did:xyz:1234!$exists    Rule_did_optional_transform
+2:      did:xyz:1234    Rule_did
+3:      did:xyz:        Rule_did_method
+4:      did:    Rule_did_root
+4:      xyz     Rule_method
+3:      1234    Rule_method_specific_idstring
+4:      1234    Rule_idstring
+2:      !$exists        Rule_transform
+3:      !       Rule_transform_char
+3:      $exists Rule_transformer
+4:      exists  Rule_transformer_option
+5:      exists  Rule_transformer_options
+6:      exists  Rule_generic_option
+2:              Rule_path_abempty
+
+<ID="11" Test="did:xyz:1234!$exists=&quot;key1&quot;"/>
+1:      did:xyz:1234!$exists="key1"     Rule_did_optional_transform
+2:      did:xyz:1234    Rule_did
+3:      did:xyz:        Rule_did_method
+4:      did:    Rule_did_root
+4:      xyz     Rule_method
+3:      1234    Rule_method_specific_idstring
+4:      1234    Rule_idstring
+2:      !$exists="key1" Rule_transform
+3:      !       Rule_transform_char
+3:      $exists="key1"  Rule_transformer
+4:      exists  Rule_transformer_option
+5:      exists  Rule_transformer_options
+6:      exists  Rule_generic_option
+4:      "key1"  Rule_transformer_namedvalue
+5:      "key1"  Rule_transformer_quotedvalue
+6:      "       Rule_DQUOTE
+6:      key1    Rule_transformer_stringvalue
+6:      "       Rule_DQUOTE
+2:              Rule_path_abempty
+
+<ID="12" Test="did:!$documents"/>
+1:      did:!$documents Rule_did_root_transform
+2:      did:    Rule_did_root
+2:      !$documents     Rule_transform
+3:      !       Rule_transform_char
+3:      $documents      Rule_transformer
+4:      documents       Rule_transformer_option
+5:      documents       Rule_transformer_options
+6:      documents       Rule_generic_option
+
+<ID="13" Test="did:xyz:!$documents"/>
+1:      did:xyz:!$documents     Rule_did_method_transform
+2:      did:xyz:        Rule_did_method
+3:      did:    Rule_did_root
+3:      xyz     Rule_method
+2:      !$documents     Rule_transform
+3:      !       Rule_transform_char
+3:      $documents      Rule_transformer
+4:      documents       Rule_transformer_option
+5:      documents       Rule_transformer_options
+6:      documents       Rule_generic_option
+
+<ID="14" Test="did:xyz:!$documents&amp;$top=10&amp;$skip=100"/>
+1:      did:xyz:!$documents&$top=10&$skip=100   Rule_did_method_transform
+2:      did:xyz:        Rule_did_method
+3:      did:    Rule_did_root
+3:      xyz     Rule_method
+2:      !$documents&$top=10&$skip=100   Rule_transform
+3:      !       Rule_transform_char
+3:      $documents      Rule_transformer
+4:      documents       Rule_transformer_option
+5:      documents       Rule_transformer_options
+6:      documents       Rule_generic_option
+3:      $top=10 Rule_transformer
+4:      top     Rule_transformer_option
+5:      top     Rule_transformer_options
+6:      top     Rule_generic_option
+4:      10      Rule_transformer_namedvalue
+5:      10      Rule_transformer_numericvalue
+3:      $skip=100       Rule_transformer
+4:      skip    Rule_transformer_option
+5:      skip    Rule_transformer_options
+6:      skip    Rule_generic_option
+4:      100     Rule_transformer_namedvalue
+5:      100     Rule_transformer_numericvalue
+
+<ID="15" Test="did:xyz:!$documents&amp;$filter=&quot;&lt;filterexpression&gt;&quot;&amp;$top=10&amp;$skip=100"/>
+1:      did:xyz:!$documents&$filter="<filterexpression>"&$top=10&$skip=100      Rule_did_method_transform
+2:      did:xyz:        Rule_did_method
+3:      did:    Rule_did_root
+3:      xyz     Rule_method
+2:      !$documents&$filter="<filterexpression>"&$top=10&$skip=100      Rule_transform
+3:      !       Rule_transform_char
+3:      $documents      Rule_transformer
+4:      documents       Rule_transformer_option
+5:      documents       Rule_transformer_options
+6:      documents       Rule_generic_option
+3:      $filter="<filterexpression>"    Rule_transformer
+4:      filter  Rule_transformer_option
+5:      filter  Rule_transformer_options
+6:      filter  Rule_generic_option
+4:      "<filterexpression>"    Rule_transformer_namedvalue
+5:      "<filterexpression>"    Rule_transformer_quotedvalue
+6:      "       Rule_DQUOTE
+6:      <filterexpression>      Rule_transformer_stringvalue
+6:      "       Rule_DQUOTE
+3:      $top=10 Rule_transformer
+4:      top     Rule_transformer_option
+5:      top     Rule_transformer_options
+6:      top     Rule_generic_option
+4:      10      Rule_transformer_namedvalue
+5:      10      Rule_transformer_numericvalue
+3:      $skip=100       Rule_transformer
+4:      skip    Rule_transformer_option
+5:      skip    Rule_transformer_options
+6:      skip    Rule_generic_option
+4:      100     Rule_transformer_namedvalue
+5:      100     Rule_transformer_numericvalue
+
+<ID="16" Test="did:xyz:!$documents&amp;$top=10&amp;$skip=100&amp;$select=&quot;&lt;selectexpression&gt;&quot;"/>
+1:      did:xyz:!$documents&$top=10&$skip=100&$select="<selectexpression>"      Rule_did_method_transform
+2:      did:xyz:        Rule_did_method
+3:      did:    Rule_did_root
+3:      xyz     Rule_method
+2:      !$documents&$top=10&$skip=100&$select="<selectexpression>"      Rule_transform
+3:      !       Rule_transform_char
+3:      $documents      Rule_transformer
+4:      documents       Rule_transformer_option
+5:      documents       Rule_transformer_options
+6:      documents       Rule_generic_option
+3:      $top=10 Rule_transformer
+4:      top     Rule_transformer_option
+5:      top     Rule_transformer_options
+6:      top     Rule_generic_option
+4:      10      Rule_transformer_namedvalue
+5:      10      Rule_transformer_numericvalue
+3:      $skip=100       Rule_transformer
+4:      skip    Rule_transformer_option
+5:      skip    Rule_transformer_options
+6:      skip    Rule_generic_option
+4:      100     Rule_transformer_namedvalue
+5:      100     Rule_transformer_numericvalue
+3:      $select="<selectexpression>"    Rule_transformer
+4:      select  Rule_transformer_option
+5:      select  Rule_transformer_options
+6:      select  Rule_generic_option
+4:      "<selectexpression>"    Rule_transformer_namedvalue
+5:      "<selectexpression>"    Rule_transformer_quotedvalue
+6:      "       Rule_DQUOTE
+6:      <selectexpression>      Rule_transformer_stringvalue
+6:      "       Rule_DQUOTE
+
+<ID="17" Test="did:!$methods"/>
+1:      did:!$methods   Rule_did_root_transform
+2:      did:    Rule_did_root
+2:      !$methods       Rule_transform
+3:      !       Rule_transform_char
+3:      $methods        Rule_transformer
+4:      methods Rule_transformer_option
+5:      methods Rule_transformer_options
+6:      methods Rule_generic_option
+
+<ID="18" Test="did:xyz:!$supportedCapabilities"/>
+1:      did:xyz:!$supportedCapabilities Rule_did_method_transform
+2:      did:xyz:        Rule_did_method
+3:      did:    Rule_did_root
+3:      xyz     Rule_method
+2:      !$supportedCapabilities Rule_transform
+3:      !       Rule_transform_char
+3:      $supportedCapabilities  Rule_transformer
+4:      supportedCapabilities   Rule_transformer_option
+5:      supportedCapabilities   Rule_transformer_options
+6:      supportedCapabilities   Rule_generic_option
+
+<ID="19" Test="did:xyz:1234!$format=&quot;json&quot;"/>
+1:      did:xyz:1234!$format="json"     Rule_did_optional_transform
+2:      did:xyz:1234    Rule_did
+3:      did:xyz:        Rule_did_method
+4:      did:    Rule_did_root
+4:      xyz     Rule_method
+3:      1234    Rule_method_specific_idstring
+4:      1234    Rule_idstring
+2:      !$format="json" Rule_transform
+3:      !       Rule_transform_char
+3:      $format="json"  Rule_transformer
+4:      format  Rule_transformer_option
+5:      format  Rule_transformer_options
+6:      format  Rule_generic_option
+4:      "json"  Rule_transformer_namedvalue
+5:      "json"  Rule_transformer_quotedvalue
+6:      "       Rule_DQUOTE
+6:      json    Rule_transformer_stringvalue
+6:      "       Rule_DQUOTE
+2:              Rule_path_abempty
+
+<ID="20" Test="did:xyz:1234!$format=&quot;atom&quot;"/>
+1:      did:xyz:1234!$format="atom"     Rule_did_optional_transform
+2:      did:xyz:1234    Rule_did
+3:      did:xyz:        Rule_did_method
+4:      did:    Rule_did_root
+4:      xyz     Rule_method
+3:      1234    Rule_method_specific_idstring
+4:      1234    Rule_idstring
+2:      !$format="atom" Rule_transform
+3:      !       Rule_transform_char
+3:      $format="atom"  Rule_transformer
+4:      format  Rule_transformer_option
+5:      format  Rule_transformer_options
+6:      format  Rule_generic_option
+4:      "atom"  Rule_transformer_namedvalue
+5:      "atom"  Rule_transformer_quotedvalue
+6:      "       Rule_DQUOTE
+6:      atom    Rule_transformer_stringvalue
+6:      "       Rule_DQUOTE
+2:              Rule_path_abempty
+
+<ID="21" Test="did:xyz:1234!$format=&quot;xml&quot;"/>
+1:      did:xyz:1234!$format="xml"      Rule_did_optional_transform
+2:      did:xyz:1234    Rule_did
+3:      did:xyz:        Rule_did_method
+4:      did:    Rule_did_root
+4:      xyz     Rule_method
+3:      1234    Rule_method_specific_idstring
+4:      1234    Rule_idstring
+2:      !$format="xml"  Rule_transform
+3:      !       Rule_transform_char
+3:      $format="xml"   Rule_transformer
+4:      format  Rule_transformer_option
+5:      format  Rule_transformer_options
+6:      format  Rule_generic_option
+4:      "xml"   Rule_transformer_namedvalue
+5:      "xml"   Rule_transformer_quotedvalue
+6:      "       Rule_DQUOTE
+6:      xml     Rule_transformer_stringvalue
+6:      "       Rule_DQUOTE
+2:              Rule_path_abempty
+
+<ID="22" Test="did:xyz:1234!$decode=&quot;&lt;parameters&gt;&quot;"/>
+1:      did:xyz:1234!$decode="<parameters>"     Rule_did_optional_transform
+2:      did:xyz:1234    Rule_did
+3:      did:xyz:        Rule_did_method
+4:      did:    Rule_did_root
+4:      xyz     Rule_method
+3:      1234    Rule_method_specific_idstring
+4:      1234    Rule_idstring
+2:      !$decode="<parameters>" Rule_transform
+3:      !       Rule_transform_char
+3:      $decode="<parameters>"  Rule_transformer
+4:      decode  Rule_transformer_option
+5:      decode  Rule_transformer_options
+6:      decode  Rule_generic_option
+4:      "<parameters>"  Rule_transformer_namedvalue
+5:      "<parameters>"  Rule_transformer_quotedvalue
+6:      "       Rule_DQUOTE
+6:      <parameters>    Rule_transformer_stringvalue
+6:      "       Rule_DQUOTE
+2:              Rule_path_abempty
+
+<ID="23" Test="did:xyz:1234!$decrypt=&quot;&lt;key&gt;&quot;"/>
+1:      did:xyz:1234!$decrypt="<key>"   Rule_did_optional_transform
+2:      did:xyz:1234    Rule_did
+3:      did:xyz:        Rule_did_method
+4:      did:    Rule_did_root
+4:      xyz     Rule_method
+3:      1234    Rule_method_specific_idstring
+4:      1234    Rule_idstring
+2:      !$decrypt="<key>"       Rule_transform
+3:      !       Rule_transform_char
+3:      $decrypt="<key>"        Rule_transformer
+4:      decrypt Rule_transformer_option
+5:      decrypt Rule_transformer_options
+6:      decrypt Rule_generic_option
+4:      "<key>" Rule_transformer_namedvalue
+5:      "<key>" Rule_transformer_quotedvalue
+6:      "       Rule_DQUOTE
+6:      <key>   Rule_transformer_stringvalue
+6:      "       Rule_DQUOTE
+2:              Rule_path_abempty
+
+<ID="24" Test="did:xyz:1234!$encode=&quot;&lt;parameters&gt;&quot;"/>
+1:      did:xyz:1234!$encode="<parameters>"     Rule_did_optional_transform
+2:      did:xyz:1234    Rule_did
+3:      did:xyz:        Rule_did_method
+4:      did:    Rule_did_root
+4:      xyz     Rule_method
+3:      1234    Rule_method_specific_idstring
+4:      1234    Rule_idstring
+2:      !$encode="<parameters>" Rule_transform
+3:      !       Rule_transform_char
+3:      $encode="<parameters>"  Rule_transformer
+4:      encode  Rule_transformer_option
+5:      encode  Rule_transformer_options
+6:      encode  Rule_generic_option
+4:      "<parameters>"  Rule_transformer_namedvalue
+5:      "<parameters>"  Rule_transformer_quotedvalue
+6:      "       Rule_DQUOTE
+6:      <parameters>    Rule_transformer_stringvalue
+6:      "       Rule_DQUOTE
+2:              Rule_path_abempty
+
+<ID="25" Test="did:xyz:1234!$encrypt=&quot;&lt;key&gt;&quot;"/>
+1:      did:xyz:1234!$encrypt="<key>"   Rule_did_optional_transform
+2:      did:xyz:1234    Rule_did
+3:      did:xyz:        Rule_did_method
+4:      did:    Rule_did_root
+4:      xyz     Rule_method
+3:      1234    Rule_method_specific_idstring
+4:      1234    Rule_idstring
+2:      !$encrypt="<key>"       Rule_transform
+3:      !       Rule_transform_char
+3:      $encrypt="<key>"        Rule_transformer
+4:      encrypt Rule_transformer_option
+5:      encrypt Rule_transformer_options
+6:      encrypt Rule_generic_option
+4:      "<key>" Rule_transformer_namedvalue
+5:      "<key>" Rule_transformer_quotedvalue
+6:      "       Rule_DQUOTE
+6:      <key>   Rule_transformer_stringvalue
+6:      "       Rule_DQUOTE
+2:              Rule_path_abempty
+
+<ID="26" Test="did:xyz:1234!$serviceId=&quot;bops&quot;"/>
+1:      did:xyz:1234!$serviceId="bops"  Rule_did_optional_transform
+2:      did:xyz:1234    Rule_did
+3:      did:xyz:        Rule_did_method
+4:      did:    Rule_did_root
+4:      xyz     Rule_method
+3:      1234    Rule_method_specific_idstring
+4:      1234    Rule_idstring
+2:      !$serviceId="bops"      Rule_transform
+3:      !       Rule_transform_char
+3:      $serviceId="bops"       Rule_transformer
+4:      serviceId       Rule_transformer_option
+5:      serviceId       Rule_transformer_options
+6:      serviceId       Rule_generic_option
+4:      "bops"  Rule_transformer_namedvalue
+5:      "bops"  Rule_transformer_quotedvalue
+6:      "       Rule_DQUOTE
+6:      bops    Rule_transformer_stringvalue
+6:      "       Rule_DQUOTE
+2:              Rule_path_abempty
+
+<ID="27" Test="did:xyz:1234!$serviceId=&quot;exam_svc&quot;/foo/bar?a=1#flip"/>
+1:      did:xyz:1234!$serviceId="exam_svc"/foo/bar?a=1#flip     Rule_did_optional_transform
+2:      did:xyz:1234    Rule_did
+3:      did:xyz:        Rule_did_method
+4:      did:    Rule_did_root
+4:      xyz     Rule_method
+3:      1234    Rule_method_specific_idstring
+4:      1234    Rule_idstring
+2:      !$serviceId="exam_svc"  Rule_transform
+3:      !       Rule_transform_char
+3:      $serviceId="exam_svc"   Rule_transformer
+4:      serviceId       Rule_transformer_option
+5:      serviceId       Rule_transformer_options
+6:      serviceId       Rule_generic_option
+4:      "exam_svc"      Rule_transformer_namedvalue
+5:      "exam_svc"      Rule_transformer_quotedvalue
+6:      "       Rule_DQUOTE
+6:      exam_svc        Rule_transformer_stringvalue
+6:      "       Rule_DQUOTE
+2:      /foo/bar        Rule_path_abempty
+3:      foo     Rule_segment
+3:      bar     Rule_segment
+2:      a=1     Rule_query
+4:      =       Rule_sub_delims
+2:      flip    Rule_fragment
+
+<ID="28" Test="did:xyz:1234!$serviceId=&quot;bops&quot;/foo/bar?a=1#flip"/>
+1:      did:xyz:1234!$serviceId="bops"/foo/bar?a=1#flip Rule_did_optional_transform
+2:      did:xyz:1234    Rule_did
+3:      did:xyz:        Rule_did_method
+4:      did:    Rule_did_root
+4:      xyz     Rule_method
+3:      1234    Rule_method_specific_idstring
+4:      1234    Rule_idstring
+2:      !$serviceId="bops"      Rule_transform
+3:      !       Rule_transform_char
+3:      $serviceId="bops"       Rule_transformer
+4:      serviceId       Rule_transformer_option
+5:      serviceId       Rule_transformer_options
+6:      serviceId       Rule_generic_option
+4:      "bops"  Rule_transformer_namedvalue
+5:      "bops"  Rule_transformer_quotedvalue
+6:      "       Rule_DQUOTE
+6:      bops    Rule_transformer_stringvalue
+6:      "       Rule_DQUOTE
+2:      /foo/bar        Rule_path_abempty
+3:      foo     Rule_segment
+3:      bar     Rule_segment
+2:      a=1     Rule_query
+4:      =       Rule_sub_delims
+2:      flip    Rule_fragment
+
+<ID="29" Test="did:xyz:1234!$selectId=&quot;bops&quot;"/>
+1:      did:xyz:1234!$selectId="bops"   Rule_did_optional_transform
+2:      did:xyz:1234    Rule_did
+3:      did:xyz:        Rule_did_method
+4:      did:    Rule_did_root
+4:      xyz     Rule_method
+3:      1234    Rule_method_specific_idstring
+4:      1234    Rule_idstring
+2:      !$selectId="bops"       Rule_transform
+3:      !       Rule_transform_char
+3:      $selectId="bops"        Rule_transformer
+4:      selectId        Rule_transformer_option
+5:      selectId        Rule_transformer_options
+6:      selectId        Rule_generic_option
+4:      "bops"  Rule_transformer_namedvalue
+5:      "bops"  Rule_transformer_quotedvalue
+6:      "       Rule_DQUOTE
+6:      bops    Rule_transformer_stringvalue
+6:      "       Rule_DQUOTE
+2:              Rule_path_abempty
+
+<ID="30" Test="did:xyz:1234!$selectId=&quot;bops&quot;&amp;$exists"/>
+1:      did:xyz:1234!$selectId="bops"&$exists   Rule_did_optional_transform
+2:      did:xyz:1234    Rule_did
+3:      did:xyz:        Rule_did_method
+4:      did:    Rule_did_root
+4:      xyz     Rule_method
+3:      1234    Rule_method_specific_idstring
+4:      1234    Rule_idstring
+2:      !$selectId="bops"&$exists       Rule_transform
+3:      !       Rule_transform_char
+3:      $selectId="bops"        Rule_transformer
+4:      selectId        Rule_transformer_option
+5:      selectId        Rule_transformer_options
+6:      selectId        Rule_generic_option
+4:      "bops"  Rule_transformer_namedvalue
+5:      "bops"  Rule_transformer_quotedvalue
+6:      "       Rule_DQUOTE
+6:      bops    Rule_transformer_stringvalue
+6:      "       Rule_DQUOTE
+3:      $exists Rule_transformer
+4:      exists  Rule_transformer_option
+5:      exists  Rule_transformer_options
+6:      exists  Rule_generic_option
+2:              Rule_path_abempty
+
+<ID="31" Test="did:sov:BzCbsNYhMrjHiqZDTUASHg!$filter=&quot;spec/tictactoe/1.*&quot;"/>
+1:      did:sov:BzCbsNYhMrjHiqZDTUASHg!$filter="spec/tictactoe/1.*"     Rule_did_optional_transform
+2:      did:sov:BzCbsNYhMrjHiqZDTUASHg  Rule_did
+3:      did:sov:        Rule_did_method
+4:      did:    Rule_did_root
+4:      sov     Rule_method
+3:      BzCbsNYhMrjHiqZDTUASHg  Rule_method_specific_idstring
+4:      BzCbsNYhMrjHiqZDTUASHg  Rule_idstring
+2:      !$filter="spec/tictactoe/1.*"   Rule_transform
+3:      !       Rule_transform_char
+3:      $filter="spec/tictactoe/1.*"    Rule_transformer
+4:      filter  Rule_transformer_option
+5:      filter  Rule_transformer_options
+6:      filter  Rule_generic_option
+4:      "spec/tictactoe/1.*"    Rule_transformer_namedvalue
+5:      "spec/tictactoe/1.*"    Rule_transformer_quotedvalue
+6:      "       Rule_DQUOTE
+6:      spec/tictactoe/1.*      Rule_transformer_stringvalue
+6:      "       Rule_DQUOTE
+2:              Rule_path_abempty
+
+<ID="32" Test="did:sov:BzCbsNYhMrjHiqZDTUASHg!$filter=&quot;*&quot;"/>
+1:      did:sov:BzCbsNYhMrjHiqZDTUASHg!$filter="*"      Rule_did_optional_transform
+2:      did:sov:BzCbsNYhMrjHiqZDTUASHg  Rule_did
+3:      did:sov:        Rule_did_method
+4:      did:    Rule_did_root
+4:      sov     Rule_method
+3:      BzCbsNYhMrjHiqZDTUASHg  Rule_method_specific_idstring
+4:      BzCbsNYhMrjHiqZDTUASHg  Rule_idstring
+2:      !$filter="*"    Rule_transform
+3:      !       Rule_transform_char
+3:      $filter="*"     Rule_transformer
+4:      filter  Rule_transformer_option
+5:      filter  Rule_transformer_options
+6:      filter  Rule_generic_option
+4:      "*"     Rule_transformer_namedvalue
+5:      "*"     Rule_transformer_quotedvalue
+6:      "       Rule_DQUOTE
+6:      *       Rule_transformer_stringvalue
+6:      "       Rule_DQUOTE
+2:              Rule_path_abempty
+
+<ID="33" Test="did:xyz:!$supportedCapabilities"/>
+1:      did:xyz:!$supportedCapabilities Rule_did_method_transform
+2:      did:xyz:        Rule_did_method
+3:      did:    Rule_did_root
+3:      xyz     Rule_method
+2:      !$supportedCapabilities Rule_transform
+3:      !       Rule_transform_char
+3:      $supportedCapabilities  Rule_transformer
+4:      supportedCapabilities   Rule_transformer_option
+5:      supportedCapabilities   Rule_transformer_options
+6:      supportedCapabilities   Rule_generic_option
+
+<ID="34" Test="did:xyz:1234!$type=&quot;diddoc&quot;"/>
+1:      did:xyz:1234!$type="diddoc"     Rule_did_optional_transform
+2:      did:xyz:1234    Rule_did
+3:      did:xyz:        Rule_did_method
+4:      did:    Rule_did_root
+4:      xyz     Rule_method
+3:      1234    Rule_method_specific_idstring
+4:      1234    Rule_idstring
+2:      !$type="diddoc" Rule_transform
+3:      !       Rule_transform_char
+3:      $type="diddoc"  Rule_transformer
+4:      type    Rule_transformer_option
+5:      type    Rule_transformer_options
+6:      type    Rule_generic_option
+4:      "diddoc"        Rule_transformer_namedvalue
+5:      "diddoc"        Rule_transformer_quotedvalue
+6:      "       Rule_DQUOTE
+6:      diddoc  Rule_transformer_stringvalue
+6:      "       Rule_DQUOTE
+2:              Rule_path_abempty
+
+<ID="35" Test="did:xyz:1234!$type=&quot;schema&quot;"/>
+1:      did:xyz:1234!$type="schema"     Rule_did_optional_transform
+2:      did:xyz:1234    Rule_did
+3:      did:xyz:        Rule_did_method
+4:      did:    Rule_did_root
+4:      xyz     Rule_method
+3:      1234    Rule_method_specific_idstring
+4:      1234    Rule_idstring
+2:      !$type="schema" Rule_transform
+3:      !       Rule_transform_char
+3:      $type="schema"  Rule_transformer
+4:      type    Rule_transformer_option
+5:      type    Rule_transformer_options
+6:      type    Rule_generic_option
+4:      "schema"        Rule_transformer_namedvalue
+5:      "schema"        Rule_transformer_quotedvalue
+6:      "       Rule_DQUOTE
+6:      schema  Rule_transformer_stringvalue
+6:      "       Rule_DQUOTE
+2:              Rule_path_abempty
+
+<ID="36" Test="did:xyz:1234!$type=&quot;creddef&quot;"/>
+1:      did:xyz:1234!$type="creddef"    Rule_did_optional_transform
+2:      did:xyz:1234    Rule_did
+3:      did:xyz:        Rule_did_method
+4:      did:    Rule_did_root
+4:      xyz     Rule_method
+3:      1234    Rule_method_specific_idstring
+4:      1234    Rule_idstring
+2:      !$type="creddef"        Rule_transform
+3:      !       Rule_transform_char
+3:      $type="creddef" Rule_transformer
+4:      type    Rule_transformer_option
+5:      type    Rule_transformer_options
+6:      type    Rule_generic_option
+4:      "creddef"       Rule_transformer_namedvalue
+5:      "creddef"       Rule_transformer_quotedvalue
+6:      "       Rule_DQUOTE
+6:      creddef Rule_transformer_stringvalue
+6:      "       Rule_DQUOTE
+2:              Rule_path_abempty
+
+<ID="37" Test="did:xyz:1234!$type=&quot;overlay.format&quot;"/>
+1:      did:xyz:1234!$type="overlay.format"     Rule_did_optional_transform
+2:      did:xyz:1234    Rule_did
+3:      did:xyz:        Rule_did_method
+4:      did:    Rule_did_root
+4:      xyz     Rule_method
+3:      1234    Rule_method_specific_idstring
+4:      1234    Rule_idstring
+2:      !$type="overlay.format" Rule_transform
+3:      !       Rule_transform_char
+3:      $type="overlay.format"  Rule_transformer
+4:      type    Rule_transformer_option
+5:      type    Rule_transformer_options
+6:      type    Rule_generic_option
+4:      "overlay.format"        Rule_transformer_namedvalue
+5:      "overlay.format"        Rule_transformer_quotedvalue
+6:      "       Rule_DQUOTE
+6:      overlay.format  Rule_transformer_stringvalue
+6:      "       Rule_DQUOTE
+2:              Rule_path_abempty
+
+<ID="38" Test="did:xyz:1234!$type=&quot;node&quot;"/>
+1:      did:xyz:1234!$type="node"       Rule_did_optional_transform
+2:      did:xyz:1234    Rule_did
+3:      did:xyz:        Rule_did_method
+4:      did:    Rule_did_root
+4:      xyz     Rule_method
+3:      1234    Rule_method_specific_idstring
+4:      1234    Rule_idstring
+2:      !$type="node"   Rule_transform
+3:      !       Rule_transform_char
+3:      $type="node"    Rule_transformer
+4:      type    Rule_transformer_option
+5:      type    Rule_transformer_options
+6:      type    Rule_generic_option
+4:      "node"  Rule_transformer_namedvalue
+5:      "node"  Rule_transformer_quotedvalue
+6:      "       Rule_DQUOTE
+6:      node    Rule_transformer_stringvalue
+6:      "       Rule_DQUOTE
+2:              Rule_path_abempty
+
+<ID="39" Test="did:xyz:1234!$type=&quot;any&quot;"/>
+1:      did:xyz:1234!$type="any"        Rule_did_optional_transform
+2:      did:xyz:1234    Rule_did
+3:      did:xyz:        Rule_did_method
+4:      did:    Rule_did_root
+4:      xyz     Rule_method
+3:      1234    Rule_method_specific_idstring
+4:      1234    Rule_idstring
+2:      !$type="any"    Rule_transform
+3:      !       Rule_transform_char
+3:      $type="any"     Rule_transformer
+4:      type    Rule_transformer_option
+5:      type    Rule_transformer_options
+6:      type    Rule_generic_option
+4:      "any"   Rule_transformer_namedvalue
+5:      "any"   Rule_transformer_quotedvalue
+6:      "       Rule_DQUOTE
+6:      any     Rule_transformer_stringvalue
+6:      "       Rule_DQUOTE
+2:              Rule_path_abempty
+
+<ID="40" Test="did:!$type=&quot;config.pool&quot;"/>
+1:      did:!$type="config.pool"        Rule_did_root_transform
+2:      did:    Rule_did_root
+2:      !$type="config.pool"    Rule_transform
+3:      !       Rule_transform_char
+3:      $type="config.pool"     Rule_transformer
+4:      type    Rule_transformer_option
+5:      type    Rule_transformer_options
+6:      type    Rule_generic_option
+4:      "config.pool"   Rule_transformer_namedvalue
+5:      "config.pool"   Rule_transformer_quotedvalue
+6:      "       Rule_DQUOTE
+6:      config.pool     Rule_transformer_stringvalue
+6:      "       Rule_DQUOTE
+
+<ID="41" Test="did:!$type=&quot;perfmon.pool&quot;"/>
+1:      did:!$type="perfmon.pool"       Rule_did_root_transform
+2:      did:    Rule_did_root
+2:      !$type="perfmon.pool"   Rule_transform
+3:      !       Rule_transform_char
+3:      $type="perfmon.pool"    Rule_transformer
+4:      type    Rule_transformer_option
+5:      type    Rule_transformer_options
+6:      type    Rule_generic_option
+4:      "perfmon.pool"  Rule_transformer_namedvalue
+5:      "perfmon.pool"  Rule_transformer_quotedvalue
+6:      "       Rule_DQUOTE
+6:      perfmon.pool    Rule_transformer_stringvalue
+6:      "       Rule_DQUOTE
+
+<ID="42" Test="did:xyz:!$type=&quot;perfmon.didmethod&quot;"/>
+1:      did:xyz:!$type="perfmon.didmethod"      Rule_did_method_transform
+2:      did:xyz:        Rule_did_method
+3:      did:    Rule_did_root
+3:      xyz     Rule_method
+2:      !$type="perfmon.didmethod"      Rule_transform
+3:      !       Rule_transform_char
+3:      $type="perfmon.didmethod"       Rule_transformer
+4:      type    Rule_transformer_option
+5:      type    Rule_transformer_options
+6:      type    Rule_generic_option
+4:      "perfmon.didmethod"     Rule_transformer_namedvalue
+5:      "perfmon.didmethod"     Rule_transformer_quotedvalue
+6:      "       Rule_DQUOTE
+6:      perfmon.didmethod       Rule_transformer_stringvalue
+6:      "       Rule_DQUOTE
+
+<ID="43" Test="did:example:12345678!$path=&quot;blog&quot;/2019-03-01/lunch-in-barcelona"/>
+1:      did:example:12345678!$path="blog"/2019-03-01/lunch-in-barcelona Rule_did_optional_transform
+2:      did:example:12345678    Rule_did
+3:      did:example:    Rule_did_method
+4:      did:    Rule_did_root
+4:      example Rule_method
+3:      12345678        Rule_method_specific_idstring
+4:      12345678        Rule_idstring
+2:      !$path="blog"   Rule_transform
+3:      !       Rule_transform_char
+3:      $path="blog"    Rule_transformer
+4:      path    Rule_transformer_option
+5:      path    Rule_transformer_options
+6:      path    Rule_generic_option
+4:      "blog"  Rule_transformer_namedvalue
+5:      "blog"  Rule_transformer_quotedvalue
+6:      "       Rule_DQUOTE
+6:      blog    Rule_transformer_stringvalue
+6:      "       Rule_DQUOTE
+2:      /2019-03-01/lunch-in-barcelona  Rule_path_abempty
+3:      2019-03-01      Rule_segment
+3:      lunch-in-barcelona      Rule_segment
+
+<ID="44" Test="did:example:12345678!$serviceId=&quot;exam_src&quot;/stuff/2019-03-01/lunch-in-barcelona"/>
+1:      did:example:12345678!$serviceId="exam_src"/stuff/2019-03-01/lunch-in-barcelona  Rule_did_optional_transform
+2:      did:example:12345678    Rule_did
+3:      did:example:    Rule_did_method
+4:      did:    Rule_did_root
+4:      example Rule_method
+3:      12345678        Rule_method_specific_idstring
+4:      12345678        Rule_idstring
+2:      !$serviceId="exam_src"  Rule_transform
+3:      !       Rule_transform_char
+3:      $serviceId="exam_src"   Rule_transformer
+4:      serviceId       Rule_transformer_option
+5:      serviceId       Rule_transformer_options
+6:      serviceId       Rule_generic_option
+4:      "exam_src"      Rule_transformer_namedvalue
+5:      "exam_src"      Rule_transformer_quotedvalue
+6:      "       Rule_DQUOTE
+6:      exam_src        Rule_transformer_stringvalue
+6:      "       Rule_DQUOTE
+2:      /stuff/2019-03-01/lunch-in-barcelona    Rule_path_abempty
+3:      stuff   Rule_segment
+3:      2019-03-01      Rule_segment
+3:      lunch-in-barcelona      Rule_segment
+
+<ID="45" Test="did:example:12345678!$hashlink=&quot;hl:z3aq31uzgnZBuWNzU&quot;&amp;$doctype=&quot;schema&quot;"/>
+1:      did:example:12345678!$hashlink="hl:z3aq31uzgnZBuWNzU"&$doctype="schema" Rule_did_optional_transform
+2:      did:example:12345678    Rule_did
+3:      did:example:    Rule_did_method
+4:      did:    Rule_did_root
+4:      example Rule_method
+3:      12345678        Rule_method_specific_idstring
+4:      12345678        Rule_idstring
+2:      !$hashlink="hl:z3aq31uzgnZBuWNzU"&$doctype="schema"     Rule_transform
+3:      !       Rule_transform_char
+3:      $hashlink="hl:z3aq31uzgnZBuWNzU"        Rule_transformer
+4:      hashlink        Rule_transformer_option
+5:      hashlink        Rule_transformer_options
+6:      hashlink        Rule_generic_option
+4:      "hl:z3aq31uzgnZBuWNzU"  Rule_transformer_namedvalue
+5:      "hl:z3aq31uzgnZBuWNzU"  Rule_transformer_quotedvalue
+6:      "       Rule_DQUOTE
+6:      hl:z3aq31uzgnZBuWNzU    Rule_transformer_stringvalue
+6:      "       Rule_DQUOTE
+3:      $doctype="schema"       Rule_transformer
+4:      doctype Rule_transformer_option
+5:      doctype Rule_transformer_options
+6:      doctype Rule_generic_option
+4:      "schema"        Rule_transformer_namedvalue
+5:      "schema"        Rule_transformer_quotedvalue
+6:      "       Rule_DQUOTE
+6:      schema  Rule_transformer_stringvalue
+6:      "       Rule_DQUOTE
+2:              Rule_path_abempty
+
+<ID="46" Test="did:example:12345678!$path=&quot;blog&quot;&amp;$filter=&quot;version eq 4&quot;&amp;$top=1/2019-03-01/lunch-in-barcelona"/>
+1:      did:example:12345678!$path="blog"&$filter="version eq 4"&$top=1/2019-03-01/lunch-in-barcelona   Rule_did_optional_transform
+2:      did:example:12345678    Rule_did
+3:      did:example:    Rule_did_method
+4:      did:    Rule_did_root
+4:      example Rule_method
+3:      12345678        Rule_method_specific_idstring
+4:      12345678        Rule_idstring
+2:      !$path="blog"&$filter="version eq 4"&$top=1     Rule_transform
+3:      !       Rule_transform_char
+3:      $path="blog"    Rule_transformer
+4:      path    Rule_transformer_option
+5:      path    Rule_transformer_options
+6:      path    Rule_generic_option
+4:      "blog"  Rule_transformer_namedvalue
+5:      "blog"  Rule_transformer_quotedvalue
+6:      "       Rule_DQUOTE
+6:      blog    Rule_transformer_stringvalue
+6:      "       Rule_DQUOTE
+3:      $filter="version eq 4"  Rule_transformer
+4:      filter  Rule_transformer_option
+5:      filter  Rule_transformer_options
+6:      filter  Rule_generic_option
+4:      "version eq 4"  Rule_transformer_namedvalue
+5:      "version eq 4"  Rule_transformer_quotedvalue
+6:      "       Rule_DQUOTE
+6:      version eq 4    Rule_transformer_stringvalue
+6:      "       Rule_DQUOTE
+3:      $top=1  Rule_transformer
+4:      top     Rule_transformer_option
+5:      top     Rule_transformer_options
+6:      top     Rule_generic_option
+4:      1       Rule_transformer_namedvalue
+5:      1       Rule_transformer_numericvalue
+2:      /2019-03-01/lunch-in-barcelona  Rule_path_abempty
+3:      2019-03-01      Rule_segment
+3:      lunch-in-barcelona      Rule_segment
+
+<ID="47" Test="did:example:12345678!$path=&quot;blog&quot;&amp;$filter=&quot;version eq 4,lang in (&apos;fr-fr&apos;,&apos;en-us&apos;)&quot;&amp;$top=1/2019-03-01/lunch-in-barcelona"/>
+1:      did:example:12345678!$path="blog"&$filter="version eq 4,lang in ('fr-fr','en-us')"&$top=1/2019-03-01/lunch-in-barcelona Rule_did_optional_transform
+2:      did:example:12345678    Rule_did
+3:      did:example:    Rule_did_method
+4:      did:    Rule_did_root
+4:      example Rule_method
+3:      12345678        Rule_method_specific_idstring
+4:      12345678        Rule_idstring
+2:      !$path="blog"&$filter="version eq 4,lang in ('fr-fr','en-us')"&$top=1   Rule_transform
+3:      !       Rule_transform_char
+3:      $path="blog"    Rule_transformer
+4:      path    Rule_transformer_option
+5:      path    Rule_transformer_options
+6:      path    Rule_generic_option
+4:      "blog"  Rule_transformer_namedvalue
+5:      "blog"  Rule_transformer_quotedvalue
+6:      "       Rule_DQUOTE
+6:      blog    Rule_transformer_stringvalue
+6:      "       Rule_DQUOTE
+3:      $filter="version eq 4,lang in ('fr-fr','en-us')"        Rule_transformer
+4:      filter  Rule_transformer_option
+5:      filter  Rule_transformer_options
+6:      filter  Rule_generic_option
+4:      "version eq 4,lang in ('fr-fr','en-us')"        Rule_transformer_namedvalue
+5:      "version eq 4,lang in ('fr-fr','en-us')"        Rule_transformer_quotedvalue
+6:      "       Rule_DQUOTE
+6:      version eq 4,lang in ('fr-fr','en-us')  Rule_transformer_stringvalue
+6:      "       Rule_DQUOTE
+3:      $top=1  Rule_transformer
+4:      top     Rule_transformer_option
+5:      top     Rule_transformer_options
+6:      top     Rule_generic_option
+4:      1       Rule_transformer_namedvalue
+5:      1       Rule_transformer_numericvalue
+2:      /2019-03-01/lunch-in-barcelona  Rule_path_abempty
+3:      2019-03-01      Rule_segment
+3:      lunch-in-barcelona      Rule_segment
+
+Press Enter to exit...

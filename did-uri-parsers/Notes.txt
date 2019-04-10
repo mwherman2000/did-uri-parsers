@@ -1,0 +1,2 @@
+﻿-rule "did-uri" -string "did:xyz:1234" -testcases "../../../did-uri-testcases1.txt" -visitor XmlDisplayer 
+-rule "did-uri" -string "did:xyz:1234" -testcases "../../../did-uri-testcases1.txt" 

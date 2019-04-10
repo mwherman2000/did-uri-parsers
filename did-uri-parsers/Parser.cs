@@ -72,20 +72,21 @@ public class Parser
             {
                 Rule rule = null;
                 Visitor visitor = null;
+                Type typeVisitor = null;
 
                 if (arguments.ContainsKey("Visitor"))
                 {
-                    Type typeVisitor = Type.GetType(arguments["Visitor"]);
-
+                    typeVisitor = Type.GetType(arguments["Visitor"]);
                     if (typeVisitor == null)
                     {
                         Console.WriteLine("visitor error: class not found - " + arguments["Visitor"]);
                     }
-                    else
-                    {
-                        visitor = (Visitor)System.Activator.CreateInstance(typeVisitor);
-                    }
                 }
+                if (typeVisitor == null)
+                {
+                    typeVisitor = Type.GetType("Displayer");
+                }
+                visitor = (Visitor)System.Activator.CreateInstance(typeVisitor);
 
                 if (arguments.ContainsKey("TestCases"))
                 {

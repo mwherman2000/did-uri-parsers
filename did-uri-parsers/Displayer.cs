@@ -331,21 +331,39 @@ public class Displayer:Visitor
 
   public Object Visit(Terminal_StringValue value)
   {
-    Console.Write(value.spelling);
+    ////Console.Write(value.spelling);
     return null;
   }
 
   public Object Visit(Terminal_NumericValue value)
   {
-    Console.Write(value.spelling);
+    ////Console.Write(value.spelling);
     return null;
   }
 
+    static int level = 0;
   private Object VisitRules(List<Rule> rules)
   {
-    foreach (Rule rule in rules)
-      rule.Accept(this);
-    return null;
+        level++;
+        foreach (Rule rule in rules)
+        {
+            string type = rule.GetType().ToString();
+            if (!type.StartsWith("Terminal_")
+                && !type.Equals("Rule_DIGIT")
+                && !type.Equals("Rule_ALPHA")
+                && !type.Equals("Rule_pchar")
+                && !type.Equals("Rule_unreserved")
+                && !type.Equals("Rule_transformer_char")
+                && !type.Equals("Rule_other_delims")
+                && !type.Equals("Rule_methodchar")
+                && !type.Equals("Rule_idchar"))
+            {
+                Console.WriteLine($"{level}:\t{rule.ToString()}\t{rule.GetType().ToString()}");
+            }
+            rule.Accept(this);
+        }
+        level--;
+        return null;
   }
 }
 
