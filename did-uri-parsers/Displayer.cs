@@ -341,7 +341,7 @@ public class Displayer:Visitor
     return null;
   }
 
-    static int level = 0;
+  static int level = 0;
   private Object VisitRules(List<Rule> rules)
   {
         level++;
