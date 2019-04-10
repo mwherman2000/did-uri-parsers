@@ -8,7 +8,7 @@ _Draft document for discussion purposes_
 
 Update cycle: As required - sometimes several times in a single day.
 
-## `did-uri-spec` Use Case/Test Case Validation of the Master `did-uri-spec` Grammar
+## Master `did-uri-spec` Grammar: `did-uri-spec` Use Case/Test Case Validation
 
 - [Master `did-uri-spec` Grammar](did-uri-parsers\0-did-uri-spec-2019-04-09.abnf)
 - [Master `did-uri-spec` Parser](did-uri-parsers)
