@@ -358,7 +358,7 @@ public class Displayer:Visitor
                 && !type.Equals("Rule_methodchar")
                 && !type.Equals("Rule_idchar"))
             {
-                Console.WriteLine($"{level}:\t{rule.ToString()}\t{rule.GetType().ToString()}");
+                Console.WriteLine($"{level}{":".PadRight(level, ' ')}{rule.ToString()}\t{rule.GetType().ToString()}");
             }
             rule.Accept(this);
         }
