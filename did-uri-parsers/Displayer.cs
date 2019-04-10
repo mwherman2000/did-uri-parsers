@@ -347,18 +347,18 @@ public class Displayer:Visitor
         level++;
         foreach (Rule rule in rules)
         {
-            string type = rule.GetType().ToString();
+            string type = rule.GetType().ToString().Replace("Rule_","");
             if (!type.StartsWith("Terminal_")
-                && !type.Equals("Rule_DIGIT")
-                && !type.Equals("Rule_ALPHA")
-                && !type.Equals("Rule_pchar")
-                && !type.Equals("Rule_unreserved")
-                && !type.Equals("Rule_transformer_char")
-                && !type.Equals("Rule_other_delims")
-                && !type.Equals("Rule_methodchar")
-                && !type.Equals("Rule_idchar"))
+                && !type.Equals("DIGIT")
+                && !type.Equals("ALPHA")
+                && !type.Equals("pchar")
+                && !type.Equals("unreserved")
+                && !type.Equals("transformer_char")
+                && !type.Equals("other_delims")
+                && !type.Equals("methodchar")
+                && !type.Equals("idchar"))
             {
-                Console.WriteLine($"{level}{":".PadRight(level, ' ')}{rule.ToString()}\t{rule.GetType().ToString()}");
+                Console.WriteLine($"{level}{":".PadRight(level, ' ')}{rule.ToString()}\t{type}");
             }
             rule.Accept(this);
         }
